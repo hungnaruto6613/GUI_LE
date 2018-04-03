@@ -1,0 +1,119 @@
+body{
+	background-color: #F3F5F9;
+}
+/**
+ * Customize nav-pill
+ */
+.nav-pills>li>a {
+    border-radius: 0px;
+}
+/**
+ * customize for nav
+ * header menu
+ */
+.navbar{
+	min-height: 40px !important;
+}
+.navbar-default{
+	background-color: #fff !important;
+	border-color: #DCE6FB!important;
+}
+.menu1{
+	border-bottom: 1px solid #DCE6FB;
+}
+.menu1 img{
+	width: 20px;
+	height: 20px;
+}
+.menu1 .logout{
+	padding: 1px 12px !important;
+	border-radius: 12px;
+	margin-top: 13px; 
+	margin-left: 3px;
+
+}
+.menu1 li a{
+	padding-left: 3px;
+	padding-right: 3px;
+}
+.menu2 .navbar-header{
+	height: 38px !important;
+}
+.menu2 a{
+	padding: 9px 20px;
+}
+.menu2 li a{
+	padding: 9px 100px;
+}
+.menu2 li a:hover{
+	color: #F2368A!important;
+}
+.menu2 .active a{
+	background-color: #fff!important;
+	border-bottom: 2px solid #F2368A;
+	color: #F2368A!important;
+}
+
+/**
+ * Customize side content bar
+ * include avata, address...
+ */
+.side-bar-short{
+	border-color: #DCE6FB;
+	background-color: #fff;
+	padding: 26px 26px 0px 26px;
+	border: 1px solid #D1D1F8;
+	border-radius: 5px;
+}
+.side-bar-short .top{
+	padding-bottom: 25px;
+	border-bottom: 1px solid #D1D1F8;
+}
+.side-bar-short .top img{
+	max-width: 100%;
+    max-height: 100%;
+}
+.side-bar-short .top .btn{
+	padding: 2px 16px !important;
+	border-radius: 13px;
+	margin-top: 5px;
+}
+.side-bar-short .bottom{
+	padding-top: 0px;
+}
+.side-bar-short .bottom a{
+	align-items: center;
+    padding: 9px 16px;
+}
+.side-bar-short .bottom a:hover{
+	color: #E24C4C;
+	text-decoration: none;
+}
+/**
+ * customize profile content
+ * include all information
+ */
+.profile-content{
+	border-color: #DCE6FB;
+	background-color: #fff;
+	padding:  0px 26px 0px 26px;
+	border: 1px solid #D1D1F8;
+	border-radius: 5px;
+}
+.profile-content .top{
+	padding-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 0px;
+	border-bottom: 1px solid #E9E9F7;
+}
+.profile-content .sumary{
+	background-color: #D9DFE3;
+	margin-top: 25px;
+	padding: 20px;
+	border-radius: 8px; 
+}
+.profile-content .bottom{
+	padding-bottom: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
