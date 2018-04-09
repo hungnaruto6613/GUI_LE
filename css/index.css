@@ -1,0 +1,284 @@
+body {
+	font: 400 15px/1.8 Lato, sans-serif;
+	color: #777;
+	background-color: #f9f9f9 !important;
+}
+/**
+ * navbar customize
+ * edit header menu
+ */
+.menu img{
+	width: 100%;
+}
+.nav-tabs li a {
+  color: #777;
+}
+#googleMap {
+  width: 100%;
+  height: 400px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.navbar-default{
+  background-color: #180a01 !important;
+}
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0 !important;
+  font-size: 11px !important;
+  letter-spacing: 4px;
+  opacity: 0.7;
+}
+.navbar li a, .navbar .navbar-brand { 
+  color: #d5d5d5 !important;
+}
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.open .dropdown-toggle {
+  color: #fff;
+  background-color: #555 !important;
+}
+.nav .dropdown-menu li a {
+  color: #000 !important;
+}
+.nav .dropdown-menu li a:hover {
+  background-color: #be6460 !important;
+}
+/**
+ *customize wallpaper element
+ *
+ * 
+ */
+.menu{
+	position: relative;
+}
+.menu .selection{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.menu .btn-customer{
+	opacity: 0.8;
+    background-color: #120403;
+    border: 1px solid #a2b7e4;
+    padding: 14px 12px;
+    border-radius: 0px;
+}
+/**
+ *customize search bar
+ * 
+ */
+
+
+.search{
+	position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+.search .form-control{
+	border-radius: 0px;
+	height: 50px;
+	background-color: #fff8f8;
+}
+.search .btn{
+	padding: 14px 12px;
+	border-radius: 0px;
+}
+.search .btn-danger{
+	background-color: #d06966d6;
+    border-color: #c46f71;
+}
+.search .dropdown-menu{
+	margin: 0;
+	border-radius: 0px;
+	min-width: 300px;
+	padding: 0;
+}
+.search .dropdown-menu>li>a{
+	padding: 12px 24px;
+	color: #fff !important;
+	background-color: #d06966d6;
+}
+.search .dropdown-menu>li>a:hover{
+	background-color: #23140d ;
+}
+
+/**
+ * 
+ */
+/* carousel */
+.media-carousel 
+{
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left 
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 124px
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 124px;
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+/**
+ * customize course top
+ */
+.title-course-top{
+	text-align: center;
+	padding: 28px 0;
+}
+.card-course{
+	border: 1px solid #d3d3d3;
+	border-radius: 4px;
+	padding: 4px 16px;
+	background-color: #fff;
+	box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 12px 12px 16px 12px;
+    
+}
+.card-course:hover{
+	box-shadow: 0 12px 12px 0 rgba(0,0,0,0.2);
+}
+.card-course .course-top{
+	border-bottom: 1px solid #d3d3d3;
+	max-height: 144px;
+	padding-bottom: 16px;
+	position: relative;
+}
+.card-course .course-bottom{
+	padding: 16px;
+	max-height: 144px;
+}
+.card-course .course-bottom img{
+	max-width: 100%;
+	height: auto;
+	
+}
+.card-course .course-bottom img:hover{
+	-ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+.card-course .course-bottom .btn{
+	padding: 4px 12px;
+	border-radius: 12px;
+	margin-top: 12px;
+}
+.checked{
+	color: #E8DE6B;
+}
+
+/**
+ * overlay for card course
+ * warning: is not using
+ */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ecab5a;
+  border-radius: 4px;
+}
+.course-top:hover .overlay{
+	opacity: 0.9;
+
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/**
+ * button more
+ */
+.more{
+	border-radius: 8px !important;
+	padding: 8px 24px !important;
+	margin: 12px;
+}
+
+/* form login*/
+ .borders-right{
+  border-right: solid 1px lightgray;
+  }
+  .icon-size{
+    font-size: 20px;
+  }
+  .center-or{
+        margin-top: 8px;
+    text-align: center; 
+  }
+  .text-left{
+    text-align: right;
+
+  }
+  .padding-form{
+    padding: 24px;
+  }
+/* end login*/

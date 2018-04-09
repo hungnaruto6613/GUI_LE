@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--bootstrap 3.3.7 core library-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+	<!--Start menu bar-->
+	<div class="menu">
+		<img src="img/wallpaper.jpg">
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#myPage">Logo</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#myPage">HOME</a>
+						</li>
+						<li>
+							<a href="#band">COURSE</a>
+						</li>
+						<li>
+							<a href="#tour">INSTRUCTOR</a>
+						</li>
+						<li>
+							<a href="#contact">ABOUT</a>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">JOIN HERE
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">SIGNIN</a>
+								</li>
+								<li>
+									<a href="#">SIGNUP</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--Start search-->
+
+		<!--End search-->
+
+		<div class="container center-block selection">
+			<div class="btn-group">
+				<div class="btn-group btn-group-justified">
+					<a href="#" class="btn btn-primary btn-customer">HoaVang</a>
+					<a href="#" class="btn btn-primary btn-customer">ThanhKhe</a>
+					<a href="#" class="btn btn-primary btn-customer">LienChieu</a>
+					<div class="btn-group">
+						<button type="button" class="btn btn-primary dropdown-toggle btn-customer" data-toggle="dropdown">Select more
+							<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu more" role="menu">
+							<li>
+								<a href="#" class="">HaiChau</a>
+							</li>
+							<li>
+								<a href="#" class="">NguHanhSon</a>
+							</li>
+							<li>
+								<a href="#" class="">SonTra</a>
+							</li>
+							<li>
+								<a href="#" class="">CamLe</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End menu bar-->
+
+	<!--Start course-->
+	<div class="container-fluid">
+		<div class="row title-course-top">
+			<h1>SEARCH COURSES</h1>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form class="search" role="search">
+					<div class="input-group">
+
+						<input type="text" placeholder="Search for something..." class="form-control">
+
+						<div class="input-group-btn">
+							<button type="button" class="btn btn-search btn-danger">
+								<span class="glyphicon glyphicon-search"></span>
+								<span class="label-icon">Search</span>
+							</button>
+							<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Property
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu pull-right" role="menu">
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-user"></span>
+										<span class="label-icon">Search Instructor</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="glyphicon glyphicon-book"></span>
+										<span class="label-icon">Search Course</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class="googlemap">
+				<div id="map"></div>
+			</div>
+			<div class="store">
+				<div class="col-sm-10 box">
+					<div class="col-sm-2">
+						<img class="avatar" src="img/student.png" alt="" class="mb20 img-responsive">
+					</div>
+					<div class="col-sm-10">
+						<h3 class="title">English for Beginner</h3>
+						<span class="duration">
+							<b>Duration : </b> 2 Months </span>
+						<b>Instructor</b> : Le Manh Hung
+						<br>
+						<b class="heading">User Rating : </b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<b> / </b> 8.0
+						</br>
+					</div>
+					<div class="col-sm-12 course-information">
+						<span> - Begin your English language journey with our basic English courses and online support. We'll get you communicating
+							with confidence and enjoying everything the English language has to offer.
+						</span>
+					</div>
+					<div class="col-sm-12 box-footer">
+						<span class="cost">
+							Cost: $200
+						</span>
+						<button class="btn btn-success" style="float:right">Enroll Now</button>
+					</div>
+				</div>
+			</div>
+			<div class="store">
+				<div class="col-sm-10 box">
+					<div class="col-sm-2">
+						<img class="avatar" src="img/student.png" alt="" class="mb20 img-responsive">
+					</div>
+					<div class="col-sm-10">
+						<h3 class="title">English for Beginner</h3>
+						<span class="duration">
+							<b>Duration : </b> 2 Months </span>
+						<b>Instructor</b> : Le Manh Hung
+						<br>
+						<b class="heading">User Rating : </b>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<b> / </b> 8.0
+						</br>
+					</div>
+					<div class="col-sm-12 course-information">
+						<span> - Begin your English language journey with our basic English courses and online support. We'll get you communicating
+							with confidence and enjoying everything the English language has to offer.
+						</span>
+					</div>
+					<div class="col-sm-12 box-footer">
+						<span class="cost">
+							Cost: $200
+						</span>
+						<button class="btn btn-success" style="float:right">Enroll Now</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end course-->
+</body>
+<script>
+		function initMap() {
+		  var uluru = {lat: 16.054407, lng: 108.202167};
+		  var map = new google.maps.Map(document.getElementById('map'), {
+			zoom: 15,
+			center: uluru
+		  });
+		  var marker = new google.maps.Marker({
+			position: uluru,
+			map: map
+		  });
+		}
+	  </script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVLk0MiV7xhTE7l8E-aH4ZSwRssYKms4Y&callback=initMap">
+    </script>
+</html>

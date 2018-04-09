@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css" media="screen">
+  .border-right{
+border-right: solid 1px lightgray;
+  }
+  .icon-size{
+    font-size: 20px;
+  }
+  .center-or{
+        margin-top: 8px;
+    text-align: center; 
+  }
+  .text-left{
+    text-align: right;
+
+  }
+  .padding-form{
+    padding: 24px;
+  }
+</style>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body row">
+          <form class="col-md-6 border-right">
+                <a class="btn btn-primary btn-block" href="#">Continue with facebook <i class="fa fa-facebook-square icon-size"></i></a>
+                <a class="btn btn-danger btn-block" href="#">Continue with google+  <i class="fa fa-google-plus-square  icon-size"></i></a>
+                <div class="center-or">
+                  <p>OR</p>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+                </div>
+                <div class="form-group text-left">
+                    <a class="d-block small" href="" data-toggle="modal" data-target="#forgot-password" data-dismiss="modal">Forgot your password?</a>
+                </div>
+              <a class="btn btn-primary btn-block" href="#">Login</a>
+              </form>
+              <div class="col-md-6">
+                <div class="float-right card card-login mx-auto mt-5">
+                    <p>If you don't already have an account click the button below to create your account.</p>
+                    <a class="btn btn-default btn-block" href="#">CREATE ACCOUNT</a>
+                </div>
+              </div>
+            </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="modal fade row" id="forgot-password" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Reset Your Password</h4>
+        </div>
+        <div class="modal-body padding-form">
+           <div class="text-center mt-4 mb-5">
+                <p>Please enter your registation email or username. A password resetting email would be sent to your inbox (or Junk/ Spam)</p>
+              </div>
+              <form>
+                <div class="form-group">
+                  <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <a class="btn btn-default btn-block" href="login.html">RESET PASSWORD</a>
+              </form>
+            </div>
+        <div class="modal-footer">
+            
+
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
