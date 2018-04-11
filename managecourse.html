@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!--bootstrap 3.3.7 core library-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50" ng-app="ngManageCourse">
+    <!--Start menu bar-->
+    <div class="menu">
+        <img src="img/wallpaper.jpg">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#myPage">Logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#myPage">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#band">COURSE</a>
+                        </li>
+                        <li>
+                            <a href="#tour">INSTRUCTOR</a>
+                        </li>
+                        <li>
+                            <a href="#contact">ABOUT</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">JOIN HERE
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">SIGNIN</a>
+                                </li>
+                                <li>
+                                    <a href="#">SIGNUP</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Start search-->
+
+        <!--End search-->
+
+        <div class="container center-block selection">
+            <div class="btn-group">
+                <div class="btn-group btn-group-justified">
+                    <a href="#" class="btn btn-primary btn-customer">HoaVang</a>
+                    <a href="#" class="btn btn-primary btn-customer">ThanhKhe</a>
+                    <a href="#" class="btn btn-primary btn-customer">LienChieu</a>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle btn-customer" data-toggle="dropdown">Select more
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu more" role="menu">
+                            <li>
+                                <a href="#" class="">HaiChau</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">NguHanhSon</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">SonTra</a>
+                            </li>
+                            <li>
+                                <a href="#" class="">CamLe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End menu bar-->
+
+    <!--Start course-->
+    <div class="container-fluid" ng-controller="myController">
+        <div class="row title-course-top">
+            <h1>MANAGE COURSES</h1>
+        </div>
+        <div class="row">
+            <div class="list-of-studenets">
+                <div class="list-header">
+                    <h3>List of Students</h3>
+                </div>
+                <div ng-repeat="item in list">
+                    <div ng-show="current_tab == item.Id">
+                        <div ng-repeat="student in item.Student" class="students">
+                            <div class="col-sm-12" style="border: 1px solid lightgray">
+                                <div class="col-sm-2" style="padding:0px">
+                                    <img class="avatar" src="img/student.png" alt="" class="mb20 img-responsive">
+                                </div>
+                                <div class="col-sm-10" style="padding:0px">
+                                    <div class="group-btn">
+                                        <button class="btn btn-success">Accept</button>
+                                        <button class="btn btn-default">Decline</button>
+                                    </div>
+                                    <div>
+                                        <b>Student Name</b> :{{student}}
+                                        <br>
+                                        <b class="heading"> Gender </b> Male
+                                        <br>
+                                        <b>Age</b> : 22 years old
+                                        <br>
+                                        <b>School</b> :Duy Tan University
+                                        </br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-of-courses">
+                <div class="list-header">
+                    <h3>List of Courses</h3>
+                </div>
+                <ul class="col-sm-12 courses" style="padding: 0px">
+                    <li ng-repeat="item in items" class="col-sm-12" style="border: 1px solid lightgray; padding-right:0px">
+                        <a ng-click="changeTab(item.Id)" class="course-name">
+                            <h4>{{item.CourseName}}</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--end course-->
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script>
+    angular.module('ngManageCourse', [])
+        .controller('myController', ['$scope', function ($scope) {
+            $scope.current_tab = 1;
+            $scope.items = [{
+                    CourseName: "English for Beginner",
+                    Id: 1
+                },
+                {
+                    CourseName: "English for Research Publication Purposes Specialization",
+                    Id: 2
+                },
+                {
+                    CourseName: "Speak English Professionally: In Person, Online & On the Phone",
+                    Id: 3
+                }
+            ];
+            $scope.list = [{
+                    Id: 1,
+                    Student:["Sana", "Momo","Mina"]
+                },
+                {
+                    Id: 2,
+                    Student:["Nayeon","Tzuyu","Jihyo"]
+                },
+                {
+                    Id: 3,
+                    Student:["Jungyeon","Chaeyeon","Dahyun"]
+                },
+            ];
+            $scope.changeTab = function (index) {
+                $scope.current_tab = index;
+            };
+        }]);
+</script>
+
+</html>
