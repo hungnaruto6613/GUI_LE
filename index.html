@@ -13,11 +13,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 	<!--Start menu bar-->
 	<div class="menu">
-		<img src="img/wallpaper.jpg">
+		<!--<img src="img/wallpaper.jpg">-->
 		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
@@ -46,333 +47,540 @@
 		    </div>
 		  </div>
 		</nav>
-		<div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Login</h4>
-        </div>
-        <div class="modal-body row">
-          <form class="col-md-6 borders-right">
-                <a class="btn btn-primary btn-block" href="#">Continue with facebook <i class="fa fa-facebook-square icon-size"></i></a>
-                <a class="btn btn-danger btn-block" href="#">Continue with google+  <i class="fa fa-google-plus-square  icon-size"></i></a>
-                <div class="center-or">
-                  <p>OR</p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
-                </div>
-                <div class="form-group text-left">
-                    <a class="d-block small" href="" data-toggle="modal" data-target="#forgot-password" data-dismiss="modal">Forgot your password?</a>
-                </div>
-              <a class="btn btn-primary btn-block" href="#">Login</a>
-              </form>
-              <div class="col-md-6">
-                <div class="float-right card card-login mx-auto mt-5">
-                    <p>If you don't already have an account click the button below to create your account.</p>
-                    <a class="btn btn-default btn-block" href="#">CREATE ACCOUNT</a>
-                </div>
-              </div>
-            </div>
-        <div class="modal-footer">
-        </div>
-      </div>
-      
-    </div>
-  </div>
-  <div class="modal fade row" id="forgot-password" role="dialog">
-    <div class="modal-dialog">
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Reset Your Password</h4>
-        </div>
-        <div class="modal-body padding-form">
-           <div class="text-center mt-4 mb-5">
-                <p>Please enter your registation email or username. A password resetting email would be sent to your inbox (or Junk/ Spam)</p>
-              </div>
-              <form>
-                <div class="form-group">
-                  <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
-                </div>
-                <a class="btn btn-default btn-block" href="login.html">RESET PASSWORD</a>
-              </form>
-            </div>
-        <div class="modal-footer">
-            
+		
+		<div class="menu-img">
+			<!--Start search-->
+			<form class="search" role="search">
+	            <div class="input-group">
+	    
+	                <input type="text" placeholder="Search for something..." class="form-control">
+	            
+	                <div class="input-group-btn">
+	                    <button type="button" class="btn btn-search btn-danger">
+	                        <span class="glyphicon glyphicon-search"></span>
+	                        <span class="label-icon">Search</span>
+	                    </button>
+	                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Property
+	                        <span class="caret"></span>
+	                    </button>
+	                    <ul class="dropdown-menu pull-right" role="menu">
+	                        <li>
+	                            <a href="#">
+	                                <span class="glyphicon glyphicon-user"></span>
+	                                <span class="label-icon">Search Instructor</span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="#">
+		                            <span class="glyphicon glyphicon-book"></span>
+		                            <span class="label-icon">Search Course</span>
+	                            </a>
+	                        </li>
+	                    </ul>
+	                </div>
+	            </div>  
+	        </form>   
+			<!--End search-->
 
-        </div>
-      </div>
-      
-    </div>
-  </div>
-		<!--Start search-->
-		<form class="search" role="search">
-            <div class="input-group">
-    
-                <input type="text" placeholder="Search for something..." class="form-control">
-            
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-search btn-danger">
-                        <span class="glyphicon glyphicon-search"></span>
-                        <span class="label-icon">Search</span>
-                    </button>
-                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Property
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu pull-right" role="menu">
-                        <li>
-                            <a href="#">
-                                <span class="glyphicon glyphicon-user"></span>
-                                <span class="label-icon">Search Instructor</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-	                            <span class="glyphicon glyphicon-book"></span>
-	                            <span class="label-icon">Search Course</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
-        </form>   
-		<!--End search-->
-
-		<div class="container center-block selection">
-          	<div class="btn-group">
-			  	<div class="btn-group btn-group-justified">
-				    <a href="#" class="btn btn-primary btn-customer">HoaVang</a>
-				    <a href="#" class="btn btn-primary btn-customer">ThanhKhe</a>
-				    <a href="#" class="btn btn-primary btn-customer">LienChieu</a>
-					<div class="btn-group">
-					 	<button type="button" class="btn btn-primary dropdown-toggle btn-customer" data-toggle="dropdown">Select more <span class="caret"></span></button>
-					    <ul class="dropdown-menu more" role="menu">
-					      <li><a href="#" class="">HaiChau</a></li>
-					      <li><a href="#" class="">NguHanhSon</a></li>
-					      <li><a href="#" class="">SonTra</a></li>
-					      <li><a href="#" class="">CamLe</a></li>
-					    </ul>
-				  	</div>
-				</div>
-      		</div>
-        </div>
+			<div class="container center-block selection">
+	          	<div class="btn-group">
+				  	<div class="btn-group btn-group-justified">
+					    <a href="#" class="btn btn-primary btn-customer">HoaVang</a>
+					    <a href="#" class="btn btn-primary btn-customer">ThanhKhe</a>
+					    <a href="#" class="btn btn-primary btn-customer">LienChieu</a>
+						<div class="btn-group">
+						 	<button type="button" class="btn btn-primary dropdown-toggle btn-customer" data-toggle="dropdown">Select more <span class="caret"></span></button>
+						    <ul class="dropdown-menu more" role="menu">
+						      <li><a href="#" class="">HaiChau</a></li>
+						      <li><a href="#" class="">NguHanhSon</a></li>
+						      <li><a href="#" class="">SonTra</a></li>
+						      <li><a href="#" class="">CamLe</a></li>
+						    </ul>
+					  	</div>
+					</div>
+	      		</div>
+	        </div>
+		</div>
 	</div>
 	<!--End menu bar-->
 
 	<!--Start course-->
 	<div class="container-fluid">
-	  <div class="row title-course-top">
-	    <h1>BEST COURSES</h1>
-	  </div>
-	  <div class="row">
-	    <div class="col-md-12">
-	      <div class="carousel slide media-carousel" id="media">
-	        <div class="carousel-inner">
-	          <div class="item  active">
-	            <div class="row">
-	              <div class="col-md-4">
-	                <div class="card-course">
-	                	<div class="course-top">
-	                		<h4>Course Title</h4>
-	                		This is infor about course .... <br>
-	                		This is inform about course..... <br>
-	                		This is info about course.... <br>
-	                		This is information about course...<br>
-	                		This is information about course...<br>
-	                	</div>
-	                	<div class="course-bottom row">
-	                		<div class="col-lg-4">
-	                			<img class="img-thumbnail" src="img/course.jpg">
-	                		</div>
-	                		<div class="col-lg-8">
-	                			<b>Instructor</b> : Le Manh Hung <br>
-	                			<b class="heading">User Rating : </b>
-								<span class="fa fa-star checked" ></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<b> / </b> 8.0 <br>
-								<button class="btn btn btn-default">More information</button>
-	                		</div>
-	                	</div>
-	                </div>
-	                
-	              </div>          
-	              <div class="col-md-4">
-	                <div class="card-course">
-	                	<div class="course-top">
-	                		<h4>Course Title</h4>
-	                		This is infor about course .... <br>
-	                		This is inform about course..... <br>
-	                		This is info about course.... <br>
-	                		This is information about course...<br>
-	                		This is information about course...<br>
-	                	</div>
-	                	<div class="course-bottom row">
-	                		<div class="col-lg-4">
-	                			<img class="img-thumbnail" src="img/course.jpg">
-	                		</div>
-	                		<div class="col-lg-8">
-	                			<b>Instructor</b> : Le Manh Hung <br>
-	                			<b class="heading">User Rating : </b>
-								<span class="fa fa-star checked" ></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<b> / </b> 8.0 <br>
-								<button class="btn btn btn-default">More information</button>
-	                		</div>
-	                	</div>
-	                	
-	                </div>
-	              </div>
-	              <div class="col-md-4">
-	                <div class="card-course">
-	                	<div class="course-top">
-	                		<h4>Course Title</h4>
-	                		This is infor about course .... <br>
-	                		This is inform about course..... <br>
-	                		This is info about course.... <br>
-	                		This is information about course...<br>
-	                		This is information about course...<br>
-	                		
-	                	</div>
-	                	<div class="course-bottom row">
-	                		<div class="col-lg-4">
-	                			<img class="img-thumbnail" src="img/course.jpg">
-	                		</div>
-	                		<div class="col-lg-8">
-	                			<b>Instructor</b> : Le Manh Hung <br>
-	                			<b class="heading">User Rating : </b>
-								<span class="fa fa-star checked" ></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<b> / </b> 8.0 <br>
-								<button class="btn btn btn-default">More information</button>
-	                		</div>
-	                	</div>
-	                	
-	                </div>
-	                
-	              </div>        
-	            </div>
-	          </div>
-	          <div class="item">
-	            <div class="row">
-	              <div class="col-md-4">
-	                <div class="card-course">
-	                	<div class="course-top">
-	                		<h4>Course Title</h4>
-	                		This is infor about course .... <br>
-	                		This is inform about course..... <br>
-	                		This is info about course.... <br>
-	                		This is information about course...<br>
-	                		This is information about course...<br>
-	                		
-	                	</div>
-	                	<div class="course-bottom row">
-	                		<div class="col-lg-4">
-	                			<img class="img-thumbnail" src="img/course.jpg">
-	                		</div>
-	                		<div class="col-lg-8">
-	                			<b>Instructor</b> : Le Manh Hung <br>
-	                			<b class="heading">User Rating : </b>
-								<span class="fa fa-star checked" ></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<b> / </b> 8.0 <br>
-								<button class="btn btn btn-default">More information</button>
-	                		</div>
-	                	</div>
-	                	
-	                </div>
-	              </div>          
-	              <div class="col-md-4">
-	                <div class="card-course">
-	                	<div class="course-top">
-	                		<h4>Course Title</h4>
-	                		This is infor about course .... <br>
-	                		This is inform about course..... <br>
-	                		This is info about course.... <br>
-	                		This is information about course...<br>
-	                		This is information about course...<br>
-	                	</div>
-	                	<div class="course-bottom row">
-	                		<div class="col-lg-4">
-	                			<img class="img-thumbnail" src="img/course.jpg">
-	                		</div>
-	                		<div class="col-lg-8">
-	                			<b>Instructor</b> : Le Manh Hung <br>
-	                			<b class="heading">User Rating : </b>
-								<span class="fa fa-star checked" ></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<b> / </b> 8.0 <br>
-								<button class="btn btn btn-default">More information</button>
-	                		</div>
-	                	</div>
-	                </div>
-	              </div>
-	              <div class="col-md-4">
-	                <div class="card-course">
-	                	<div class="course-top">
-	                		<h4>Course Title</h4>
-	                		This is infor about course .... <br>
-	                		This is inform about course..... <br>
-	                		This is info about course.... <br>
-	                		This is information about course...<br>
-	                		This is information about course...<br>
-	                	</div>
-	                	<div class="course-bottom row">
-	                		<div class="col-lg-4">
-	                			<img class="img-thumbnail" src="img/course.jpg">
-	                		</div>
-	                		<div class="col-lg-8">
-	                			<b>Instructor</b> : Le Manh Hung <br>
-	                			<b class="heading">User Rating : </b>
-								<span class="fa fa-star checked" ></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<b> / </b> 8.0 <br>
-								<button class="btn btn btn-default">More information</button>
-	                		</div>
-	                	</div>
-	                </div>
-	              </div>      
-	            </div>
-	          </div>
-	        </div>
-	        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
-	        <a data-slide="next" href="#media" class="right carousel-control">›</a>
-	      </div>                          
-	    </div>
-	  </div>
-	  <div class="row">
-	  	<button class="btn btn-success more center-block">VIEW MORE</button>
-	  </div>
+		<div class="category">
+			<div class="row">
+				<h1>CATEGORY</h1>
+				<h4>Find your course by the way.....</h4>
+			</div>
+			<div class="row padding-cate">
+				<div class="col-md-2 col-lg-2">
+					<div class=" type1">TOEIC 450</div>
+				</div>
+				<div class="col-md-2 col-lg-2">
+					<div class=" type2">TOEIC 450</div>
+				</div>
+				<div class="col-md-2 col-lg-2">
+					<div class=" type3">TOEIC 450</div>
+				</div>
+				<div class="col-md-2 col-lg-2">
+					<div class=" type4">TOEIC 450</div>
+				</div>
+				<div class="col-md-2 col-lg-2">
+					<div class=" type5">TOEIC 450</div>
+				</div>
+				<div class="col-md-2 col-lg-2">
+					<div class=" type6">MORE</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row title-course-top">
+		    <h1>BEST COURSES</h1>
+		    <h4>Choose the course perspiciatis unde omnis iste natus error sit voluptatem accusant</h4>
+		</div>
+		<div class="row">
+
+			<div class="col-md-12">
+			    <div class="carousel slide media-carousel" id="media">
+			        <div class="carousel-inner">
+				        <div class="item  active">
+				            <div class="row">
+					            <div class="col-md-4">
+					                <div class="card-course">
+					                	<div class="course-top">
+					                		<h4>Course Title</h4>
+					                		This is infor about course .... <br>
+					                		This is inform about course..... <br>
+					                		This is info about course.... <br>
+					                		This is information about course...<br>
+					                		This is information about course...<br>
+					                	</div>
+					                	<div class="course-bottom row">
+					                		<div class="col-lg-4">
+					                			<img class="img-thumbnail" src="img/course.jpg">
+					                		</div>
+					                		<div class="col-lg-8">
+					                			<b>Instructor</b> : Le Manh Hung <br>
+					                			<b class="heading">User Rating : </b>
+												<span class="fa fa-star checked" ></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+												<b> / </b> 8.0 <br>
+												<button class="btn btn btn-default">More information</button>
+					                		</div>
+					                	</div>
+					                </div>
+					            </div>          
+					            <div class="col-md-4">
+					                <div class="card-course">
+					                	<div class="course-top">
+					                		<h4>Course Title</h4>
+					                		This is infor about course .... <br>
+					                		This is inform about course..... <br>
+					                		This is info about course.... <br>
+					                		This is information about course...<br>
+					                		This is information about course...<br>
+					                	</div>
+					                	<div class="course-bottom row">
+					                		<div class="col-lg-4">
+					                			<img class="img-thumbnail" src="img/course.jpg">
+					                		</div>
+					                		<div class="col-lg-8">
+					                			<b>Instructor</b> : Le Manh Hung <br>
+					                			<b class="heading">User Rating : </b>
+												<span class="fa fa-star checked" ></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+												<b> / </b> 8.0 <br>
+												<button class="btn btn btn-default">More information</button>
+					                		</div>
+					                	</div>
+					                	
+					                </div>
+					            </div>
+					            <div class="col-md-4">
+					                <div class="card-course">
+					                	<div class="course-top">
+					                		<h4>Course Title</h4>
+					                		This is infor about course .... <br>
+					                		This is inform about course..... <br>
+					                		This is info about course.... <br>
+					                		This is information about course...<br>
+					                		This is information about course...<br>
+					                		
+					                	</div>
+					                	<div class="course-bottom row">
+					                		<div class="col-lg-4">
+					                			<img class="img-thumbnail" src="img/course.jpg">
+					                		</div>
+					                		<div class="col-lg-8">
+					                			<b>Instructor</b> : Le Manh Hung <br>
+					                			<b class="heading">User Rating : </b>
+												<span class="fa fa-star checked" ></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+												<b> / </b> 8.0 <br>
+												<button class="btn btn btn-default">More information</button>
+					                		</div>
+					                	</div>
+					                </div>
+					            </div>        
+				            </div>
+				        </div>
+				        <div class="item">
+				            <div class="row">
+				              	<div class="col-md-4">
+					                <div class="card-course">
+					                	<div class="course-top">
+					                		<h4>Course Title</h4>
+					                		This is infor about course .... <br>
+					                		This is inform about course..... <br>
+					                		This is info about course.... <br>
+					                		This is information about course...<br>
+					                		This is information about course...<br>
+					                		
+					                	</div>
+					                	<div class="course-bottom row">
+					                		<div class="col-lg-4">
+					                			<img class="img-thumbnail" src="img/course.jpg">
+					                		</div>
+					                		<div class="col-lg-8">
+					                			<b>Instructor</b> : Le Manh Hung <br>
+					                			<b class="heading">User Rating : </b>
+												<span class="fa fa-star checked" ></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+												<b> / </b> 8.0 <br>
+												<button class="btn btn btn-default">More information</button>
+					                		</div>
+					                	</div>
+					                	
+					                </div>
+				              	</div>          
+				              	<div class="col-md-4">
+					                <div class="card-course">
+					                	<div class="course-top">
+					                		<h4>Course Title</h4>
+					                		This is infor about course .... <br>
+					                		This is inform about course..... <br>
+					                		This is info about course.... <br>
+					                		This is information about course...<br>
+					                		This is information about course...<br>
+					                	</div>
+					                	<div class="course-bottom row">
+					                		<div class="col-lg-4">
+					                			<img class="img-thumbnail" src="img/course.jpg">
+					                		</div>
+					                		<div class="col-lg-8">
+					                			<b>Instructor</b> : Le Manh Hung <br>
+					                			<b class="heading">User Rating : </b>
+												<span class="fa fa-star checked" ></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star checked"></span>
+												<span class="fa fa-star"></span>
+												<b> / </b> 8.0 <br>
+												<button class="btn btn btn-default">More information</button>
+					                		</div>
+					                	</div>
+					                </div>
+					            </div>
+				              <div class="col-md-4">
+				                <div class="card-course">
+				                	<div class="course-top">
+				                		<h4>Course Title</h4>
+				                		This is infor about course .... <br>
+				                		This is inform about course..... <br>
+				                		This is info about course.... <br>
+				                		This is information about course...<br>
+				                		This is information about course...<br>
+				                	</div>
+				                	<div class="course-bottom row">
+				                		<div class="col-lg-4">
+				                			<img class="img-thumbnail" src="img/course.jpg">
+				                		</div>
+				                		<div class="col-lg-8">
+				                			<b>Instructor</b> : Le Manh Hung <br>
+				                			<b class="heading">User Rating : </b>
+											<span class="fa fa-star checked" ></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>
+											<b> / </b> 8.0 <br>
+											<button class="btn btn btn-default">More information</button>
+				                		</div>
+				                	</div>
+				                </div>
+				              </div>      
+				            </div>
+				        </div>
+			        </div>
+			        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+			        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+			    </div>                          
+			</div>
+		</div>
+	  	<div class="row">
+	  		<button class="btn btn-success more center-block">VIEW MORE</button>
+	  	</div>
+	  	<div class="list_instructor">
+	  		<div class="row title">
+	  			<h1>BEST INSTRUCTOR</h1>
+				<h4>Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus nullam accumsan dui.</h4>
+	  		</div>
+		  	<div class="row">
+		  		<div class="col-md-4 col-lg-4">
+		  			<div class="card_instructor">
+		  				<img class="img_instructor" src="img/instruc.jpg">
+		  				<div class="info-instructor">
+			  				<h5>Le Manh Hung</h5>
+			  				<small>hàng tỉ năm kinh nghiệm ...hàng tỉ năm kinh nghiệm ...</small>
+			  				<a href=""><small>More</small></a>
+			  			</div>
+			  			<div class="point-instructor">
+			  				9/10
+			  			</div>
+		  			</div>
+		  			
+		  		</div>
+		  		<div class="col-md-4 col-lg-4">
+		  			<div class="card_instructor">
+		  				<img class="img_instructor" src="img/instruc.jpg">
+		  				<div class="info-instructor">
+			  				<h5>Le Manh Hung</h5>
+			  				<small>hàng tỉ năm kinh nghiệm ...hàng tỉ năm kinh nghiệm ...</small>
+			  				<a href=""><small>More</small></a>
+			  			</div>
+			  			<div class="point-instructor">
+			  				9/10
+			  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="col-md-4 col-lg-4">
+		  			<div class="card_instructor">
+		  				<img class="img_instructor" src="img/instruc.jpg">
+		  				<div class="info-instructor">
+			  				<h5>Le Manh Hung</h5>
+			  				<small>hàng tỉ năm kinh nghiệm ...hàng tỉ năm kinh nghiệm ...</small>
+			  				<a href=""><small>More</small></a>
+			  			</div>
+			  			<div class="point-instructor">
+			  				9/10
+			  			</div>
+		  			</div>
+		  		</div>
+		  	</div>
+		  		
+		  	<div class="row">
+		  		<div class="col-md-4 col-lg-4">
+		  			<div class="card_instructor">
+		  				<img class="img_instructor" src="img/instruc.jpg">
+		  				<div class="info-instructor">
+			  				<h5>Le Manh Hung</h5>
+			  				<small>hàng tỉ năm kinh nghiệm ...hàng tỉ năm kinh nghiệm ...</small>
+			  				<a href=""><small>More</small></a>
+			  			</div>
+			  			<div class="point-instructor">
+			  				9/10
+			  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="col-md-4 col-lg-4">
+		  			<div class="card_instructor">
+		  				<img class="img_instructor" src="img/instruc.jpg">
+		  				<div class="info-instructor">
+			  				<h5>Le Manh Hung</h5>
+			  				<small>hàng tỉ năm kinh nghiệm ...hàng tỉ năm kinh nghiệm ...</small>
+			  				<a href=""><small>More</small></a>
+			  			</div>
+			  			<div class="point-instructor">
+			  				9/10
+			  			</div>
+		  			</div>
+		  		</div>
+		  		<div class="col-md-4 col-lg-4">
+		  			<div class="card_instructor">
+		  				<img class="img_instructor" src="img/instruc.jpg">
+		  				<div class="info-instructor">
+			  				<h5>Le Manh Hung</h5>
+			  				<small>hàng tỉ năm kinh nghiệm ...hàng tỉ năm kinh nghiệm ...</small>
+			  				<a href=""><small>More</small></a>
+			  			</div>
+			  			<div class="point-instructor">
+			  				9/10
+			  			</div>
+		  			</div>
+		  		</div>
+		  	</div>
+		  	<div class="row">
+		  		<button class="btn btn-success more center-block">VIEW MORE</button>
+		  	</div>
+
+	  	</div>
+
+	  	<div class="about-us">
+	  		<div class="row">
+	  			<h1>ABOUT US</h1>
+	  			<div class="col-md-4 col-lg-4">
+	  				<div class="about">
+	  					<h2><i class="far fa-address-card"></i></h2>
+	  					<h4>Our team</h4>
+	  					<p>it's okay to have fun and pun with your brand, as it helps to inject personality and humor into your "About Us" page. It primes visitors for a story in a way that makes them immediately feel something. That's how you create memorable, lovable marketing</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-4 col-lg-4">
+	  				<div class="about">
+	  					<h2><i class="far fa-clipboard"></i></h2>
+	  					<h4>What we do</h4>
+	  					<p>it's okay to have fun and pun with your brand, as it helps to inject personality and humor into your "About Us" page. It primes visitors for a story in a way that makes them immediately feel something. That's how you create memorable, lovable marketing</p>
+	  				</div>
+	  			</div>
+	  			<div class="col-md-4 col-lg-4">
+	  				<div class="about">
+	  					<h2><i class="fas fa-people-carry"></i></h2>
+	  					<h4>Learning easily</h4>
+	  					<p>it's okay to have fun and pun with your brand, as it helps to inject personality and humor into your "About Us" page. It primes visitors for a story in a way that makes them immediately feel something. That's how you create memorable, lovable marketing</p>
+	  				</div>
+	  			</div>
+	  		</div>
+	  	</div>
+
+		<div class="feedback">
+			<div class="row text-center">
+				<h1>HOW ABOUT US</h1>
+			</div>
+			<form action="">
+				<div class="row">
+					<div class="form-group col-md-4">
+						<label for="name"><b>Name</b></label>
+				    	<input type="text" class="form-control" placeholder="Enter Name" name="name" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="email"><b>Email</b></label>
+				    	<input type="text" class="form-control" placeholder="Enter Email" name="email" required>
+					</div>
+					<div class="form-group col-md-4">
+						<label for="phone"><b>Phone</b></label>
+				    	<input type="text" class="form-control" placeholder="Enter Phone" name="phone">
+					</div>
+					<div class="form-group col-md-12 bot">
+						<label for="msg"><b>Content</b></label>
+				    	<input type="text" class="form-control" placeholder="Enter Content" name="msg">
+					</div>
+				    <button type="submit" class="btn btn-success center-block send">SEND</button>
+				</div>
+			</form>
+		</div>
 	</div>
 
-	<div class="jumbotron" style="height: 600px">
-		
+	<div class="container-fluid footer">
+		<div class="container content">
+			<div class="row">
+				<div class="col-md-4 col-lg-4 info">
+					<h3>LEARNING GRAB</h3>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscingelit. Nulla ultrices nisi vitae laoreet dapibus. Etiampulvinar non justo at tincidunt. Cras turpis erat, ornare eget sem ut, tempus scelerisque lorem.
+					</p>
+					<h4><i class="fab fa-facebook-square"></i>    <i class="fab fa-google"></i></h4>
+				</div>
+				<div class="col-md-4 col-lg-4 info">
+					<h3>USEFUL LINKS</h3>
+					<ul>
+						<li><a href="">Course</a></li>
+						<li><a href="">Instructor</a></li>
+						<li><a href="">Create Your Course</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-lg-4 info">
+					<h3>LEARNING GRAB</h3>
+					<h4><i class="fas fa-map-marker-alt"></i> 21 Konoha - Hokage Street</h4>
+					<h4><i class="far fa-envelope"></i> Jiraiya@konoha.jp.co</h4>
+					<h4><i class="fas fa-phone"></i> +92345723424</h4>
+				</div>
+			</div>
+		</div>
+		<div class="line text-center">
+			<h5>Copyright 2018, Pinky Team. All Rights Reserved.</h5>
+		</div>
 	</div>
+
+	<div class="modal fade" id="myModal" role="dialog">
+		    <div class="modal-dialog">
+		    
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Login</h4>
+		        </div>
+		        <div class="modal-body row">
+		          <form class="col-md-6 borders-right">
+		                <a class="btn btn-primary btn-block" href="#">Continue with facebook <i class="fa fa-facebook-square icon-size"></i></a>
+		                <a class="btn btn-danger btn-block" href="#">Continue with google+  <i class="fa fa-google-plus-square  icon-size"></i></a>
+		                <div class="center-or">
+		                  <p>OR</p>
+		                </div>
+		                <div class="form-group">
+		                  <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
+		                </div>
+		                <div class="form-group">
+		                  <input class="form-control" id="exampleInputPassword1" type="password" placeholder="Password">
+		                </div>
+		                <div class="form-group text-left">
+		                    <a class="d-block small" href="" data-toggle="modal" data-target="#forgot-password" data-dismiss="modal">Forgot your password?</a>
+		                </div>
+		              <a class="btn btn-primary btn-block" href="#">Login</a>
+		              </form>
+		              <div class="col-md-6">
+		                <div class="float-right card card-login mx-auto mt-5">
+		                    <p>If you don't already have an account click the button below to create your account.</p>
+		                    <a class="btn btn-default btn-block" href="#">CREATE ACCOUNT</a>
+		                </div>
+		              </div>
+		            </div>
+		        <div class="modal-footer">
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
+		  <div class="modal fade row" id="forgot-password" role="dialog">
+		    <div class="modal-dialog">
+		      <!-- Modal content-->
+		      <div class="modal-content">
+		        <div class="modal-header">
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		          <h4 class="modal-title">Reset Your Password</h4>
+		        </div>
+		        <div class="modal-body padding-form">
+		           <div class="text-center mt-4 mb-5">
+		                <p>Please enter your registation email or username. A password resetting email would be sent to your inbox (or Junk/ Spam)</p>
+		              </div>
+		              <form>
+		                <div class="form-group">
+		                  <input class="form-control" id="exampleInputEmail1" type="email" aria-describedby="emailHelp" placeholder="Email">
+		                </div>
+		                <a class="btn btn-default btn-block" href="login.html">RESET PASSWORD</a>
+		              </form>
+		            </div>
+		        <div class="modal-footer">
+		            
+
+		        </div>
+		      </div>
+		      
+		    </div>
+		  </div>
 	<!--end course-->
 </body>
 </html>
